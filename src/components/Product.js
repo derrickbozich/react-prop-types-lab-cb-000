@@ -15,7 +15,7 @@ Product.propTypes = {
 
 function weightCheck(props, propName, componentName) {
   componentName = comopnentName || 'ANONYMOUS';
-
+  
   if (props[propName]) {
     let value = props[propName];
     if (typeof value === 'number') {
