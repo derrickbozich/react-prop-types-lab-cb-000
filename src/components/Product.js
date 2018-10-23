@@ -35,8 +35,10 @@ function weightCheck(props, propName, componentName) {
     if (typeof value === 'number') {
         return (value > 80 && value < 300) ? null : new Error(propName + ' in ' + componentName + " must be between 80 and 300");
     }
+  } else {
+    return new Error();
   }
 
-  // if prop value isn't inputted, will return new error
-  return new Error();
+  
+
 }
