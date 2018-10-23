@@ -9,7 +9,7 @@ Product.propTypes = {
   name: PropTypes.string,
   producer: PropTypes.string,
   hasWatermark: PropTypes.bool,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
   weight: weightCheck
 }
 
