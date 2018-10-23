@@ -8,6 +8,7 @@ export default class Product extends React.Component{
       <p>producer: {this.props.producer}</p>
       <p>has watermark: {this.props.hasWatermark}</p>
       <p>color: {this.props.color}</p>
+      <p>weight: {this.props.weight}</p>
     </div>
   }
 
