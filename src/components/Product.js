@@ -5,6 +5,9 @@ export default class Product extends React.Component{
   render(){
     <div className="product">
       <p>name: {this.props.name}</p>
+      <p>producer: {this.props.producer}</p>
+      <p>has watermark: {this.props.hasWatermark}</p>
+      <p>color: {this.props.color}</p>
     </div>
   }
 
@@ -21,7 +24,7 @@ Product.propTypes = {
 
 function weightCheck(props, propName, componentName) {
   componentName = comopnentName || 'ANONYMOUS';
-  
+
   if (props[propName]) {
     let value = props[propName];
     if (typeof value === 'number') {
