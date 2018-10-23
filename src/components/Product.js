@@ -8,8 +8,7 @@ export default class Product extends React.Component{
 Product.propTypes = {
   name: PropTypes.string,
   producer: PropTypes.string,
-  scoops: PropTypes.arrayOf(PropTypes.string).isRequired,
-  orderInfo: PropTypes.shape({
-    customerName: PropTypes.string.isRequired,
-    orderedAt: PropTypes.number.isRequired // We're using UNIX timestamps here
-  }).isRequired
+  hasWatermark: PropTypes.bool,
+  color: PropTypes.string.isRequired
+  weight: PropTypes.number.isRequired
+}
