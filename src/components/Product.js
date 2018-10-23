@@ -38,5 +38,5 @@ function weightCheck(props, propName, componentName) {
   }
 
   // assume all ok
-  return null;
+  return new Error();
 }
